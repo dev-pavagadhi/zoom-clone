@@ -9,7 +9,7 @@ interface MeetingModelProps {
   onClose: () => void;
   title: string;
   className?: string;
-  children: ReactNode;
+  children?: ReactNode;
   handleClick?: () => void;
   buttonText?: string;
   image?: string;
