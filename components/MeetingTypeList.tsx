@@ -165,11 +165,13 @@ const MeetingTypeList = () => {
         title="Type The Link Here"
         className="text-center"
         buttonText="Join Meeting"
-        handleClick={()=>router.push(values.link)}
+        handleClick={() => router.push(values.link)}
       >
-      <Input placeholder="Meeting Link" className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0" onChange={(e)=>setValues({...values,link:e.target.value})}/>
-
-
+        <Input
+          placeholder="Meeting Link"
+          className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+          onChange={(e) => setValues({ ...values, link: e.target.value })}
+        />
       </MeetingModel>
     </section>
   );
